@@ -9,19 +9,44 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <div class="sidebar d-flex flex-column p-3 bg-light flex-shrink-0">
-        <ul class="nav flex-column mb-auto">
-            <li class="nav-item">
-                <a href="" class="nav-link link-dark">
-                    <i class="bi bi-plus-square"></i>
-                    Tambah Tugas</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link link-dark">
-                    <i class="bi bi-card-checklist"></i>
-                    Manajemen Tugas</a>
-            </li>
-        </ul>
+    <div class="main d-flex col-lg-12">
+        <div class="sidebar d-flex flex-column p-3 bg-light flex-shrink-0">
+            <ul class="nav flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link active">
+                        <i class="bi bi-plus-square"></i>
+                        Tambah Tugas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link link-dark">
+                        <i class="bi bi-card-checklist"></i>
+                        Manajemen Tugas</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="content d-flex justify-content-center p-5 w-50">
+            <div class="container">
+                <div class="row mb-3">
+                    <h3>Tambah Tugas</h3>
+                </div>
+                <div class="row">
+                    <form action="" id="task-form">
+                        <div class="col-md-12 mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="title" placeholder="Title">
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label for="description" class="form-label">Task Description</label>
+                            <textarea class="form-control" id="description" rows="3"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
