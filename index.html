@@ -13,19 +13,19 @@
         <div class="sidebar d-flex flex-column p-3 bg-light flex-shrink-0">
             <ul class="nav flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="" class="nav-link active">
+                    <a href="#" class="nav-link active" id="add-task">
                         <i class="bi bi-plus-square"></i>
                         Tambah Tugas</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link link-dark">
+                    <a href="#" class="nav-link link-dark" id="show-task">
                         <i class="bi bi-card-checklist"></i>
                         Manajemen Tugas</a>
                 </li>
             </ul>
         </div>
     
-        <div class="content d-flex justify-content-center p-5 w-50">
+        <div class="content d-flex justify-content-center p-5 w-50" id="form-section">
             <div class="container">
                 <div class="row mb-3">
                     <h3>Tambah Tugas</h3>
@@ -45,6 +45,16 @@
                         </div>
                     </form>
                 </div>
+            </div>
+        </div>
+
+        <div class="task-lists d-flex justify-content-center p-5 d-none">
+            <div class="container">
+                <div class="row mb-3">
+                    <h3>Daftar Tugas</h3>
+                </div>
+                <div class="row" id="list-container">
+                  </div>
             </div>
         </div>
     </div>
