@@ -10,8 +10,8 @@ const showAddTaskMenu = addTask.addEventListener('click', function(){
   formSection.classList.remove('d-none');
   taskListSection.classList.add('d-none');
   addTask.classList.add('active');
-  addTask.classList.remove('link-dark');
-  taskList.classList.add('link-dark');
+  addTask.classList.remove('text-white');
+  taskList.classList.add('text-white');
   taskList.classList.remove('active');
 });
 
@@ -33,8 +33,8 @@ const showtasks = taskList.addEventListener('click', function(){
     formSection.classList.add('d-none');
     taskListSection.classList.remove('d-none');
     addTask.classList.remove('active');
-    addTask.classList.add('link-dark');
-    taskList.classList.remove('link-dark');
+    addTask.classList.add('text-white');
+    taskList.classList.remove('text-white');
     taskList.classList.add('active');
 
     listContainer.innerHTML = '';
