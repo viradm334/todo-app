@@ -1,3 +1,6 @@
+require('./style.css');
+
+document.addEventListener('DOMContentLoaded', () => {
 const taskform = document.getElementById("task-form");
 const taskList = document.getElementById("show-task");
 const listContainer = document.getElementById("list-container");
@@ -122,3 +125,6 @@ function renderTable(){
     )
   });
 }
+
+})
+
