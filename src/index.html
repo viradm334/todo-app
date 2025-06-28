@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    <div class="main d-flex col-lg-12">
+        <div class="sidebar d-flex flex-column p-3 text-white flex-shrink-0">
+            <div class="d-flex align-items-center justify-content-center fw-bold fs-4">
+                TODO APP
+            </div>
+            <hr>
+            <ul class="nav flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" id="add-task">
+                        <i class="bi bi-plus-square-fill me-2"></i>
+                        Tambah Tugas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white" id="show-task">
+                        <i class="bi bi-clipboard-fill me-2"></i>
+                        Manajemen Tugas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white" id="checkout-task">
+                        <i class="bi bi-cart-fill me-2"></i>
+                        Checkout Tugas</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="content d-flex justify-content-center p-5 w-100" id="form-section">
+            <div class="container">
+                <div class="row mb-3">
+                    <h3>Tambah Tugas</h3>
+                </div>
+                <div class="row">
+                    <form action="" id="task-form">
+                        <div class="col-md-12 mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="title" placeholder="Title">
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label for="description" class="form-label">Task Description</label>
+                            <textarea class="form-control" id="description" rows="3"></textarea>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label for="description" class="form-label">Price</label>
+                            <input type="number" class="form-control" id="price" placeholder="Harga">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="task-lists d-flex justify-content-center p-5 w-100 d-none">
+            <div class="container">
+                <div class="row mb-3">
+                    <h3>Daftar Tugas</h3>
+                </div>
+                <div class="row" id="list-container">
+                  </div>
+            </div>
+        </div>
+
+        <div class="checkout-section d-flex justify-content-center w-100 p-5 d-none">
+            <div class="container">
+                <div class="row mb-3">
+                    <h3>Checkout Tugas</h3>
+                </div>
+                <table class="table table-bordered" id="table-container">
+                    <thead>
+                      <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Task Name</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                <div class="row mb-3">
+                    <h5>Detail Harga</h5>
+                    <p id="jumlah-barang" class="mb-1"></p>
+                    <p id="total-barang" class="mb-1"></p>
+                    <p id="pajak" class="mb-1"></p>
+                    <p id="grand-total" class="mb-1"></p>
+                </div>
+                  <button class="btn btn-primary" id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
