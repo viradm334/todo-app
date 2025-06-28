@@ -11,3 +11,5 @@
 5. Kelas asynchronous yang saya gunakan adalah settimeout. Jadi fungsi ini akan dijalankan jika sudah mencapai waktu yang ditentukan dan membiarkan kode di bawahnya berjalan duluan sehingga sifatnya non-blocking.
 
 Catatan: untuk tugas 3 minggu 4 fungsi checkout tidak saya buat di checkout.html, checkout.js, dan checkout.css karena layout yang sama jadi saya gabungkan di index.html, index.js, dan style.css agar kode menjadi lebih ringkas.
+
+Untuk melihat link aplikasi yang sudah dideploy, bisa klik [disini](https://todo-vira.netlify.app/)

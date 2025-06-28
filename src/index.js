@@ -15,6 +15,7 @@ const jmlBarangText = document.getElementById('jumlah-barang');
 const totalHargaBarangText = document.getElementById('total-barang');
 const tableContainer = document.getElementById('table-container');
 const pajakText = document.getElementById('pajak');
+const alertSuccess = document.querySelector('.alert');
 let tasks = [];
 
 const showAddTaskMenu = addTask.addEventListener("click", function () {
@@ -40,8 +41,13 @@ const createTask = taskform.addEventListener("submit", function (e) {
   });
 
   tasks.push(task);
-  console.log(tasks);
-  this.reset();
+  taskform.reset();
+
+  alertSuccess.classList.remove('d-none');
+
+  setTimeout(() => {
+    alertSuccess.classList.add('d-none');
+  }, 5000);
 });
 
 const formatToIDR = new Intl.NumberFormat('id-ID', {
