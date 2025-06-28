@@ -1,3 +1,3 @@
 # Dokumentasi
 
-Aplikasi web ini adalah todo-list xyz
+Aplikasi web ini adalah todo-list
