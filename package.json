@@ -1,0 +1,26 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "Aplikasi web ini adalah todo-list",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viradm334/todo-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/viradm334/todo-app/issues"
+  },
+  "homepage": "https://github.com/viradm334/todo-app#readme",
+  "devDependencies": {
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}
