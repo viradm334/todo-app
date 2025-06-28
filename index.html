@@ -4,37 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main d-flex col-lg-12">
-        <div class="sidebar d-flex flex-column p-3 bg-dark text-white flex-shrink-0">
-            <div class="d-flex align-items-center fw-bold">
+        <div class="sidebar d-flex flex-column p-3 text-white flex-shrink-0">
+            <div class="d-flex align-items-center justify-content-center fw-bold fs-4">
                 TODO APP
             </div>
             <hr>
             <ul class="nav flex-column mb-auto">
                 <li class="nav-item">
                     <a href="#" class="nav-link active" id="add-task">
-                        <i class="bi bi-plus-square"></i>
+                        <i class="bi bi-plus-square-fill me-2"></i>
                         Tambah Tugas</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link text-white" id="show-task">
-                        <i class="bi bi-card-checklist"></i>
+                        <i class="bi bi-clipboard-fill me-2"></i>
                         Manajemen Tugas</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link text-white" id="checkout-task">
-                        <i class="bi bi-cart-check"></i>
+                        <i class="bi bi-cart-fill me-2"></i>
                         Checkout Tugas</a>
                 </li>
             </ul>
         </div>
     
-        <div class="content d-flex justify-content-center p-5 w-50" id="form-section">
+        <div class="content d-flex justify-content-center p-5 w-100" id="form-section">
             <div class="container">
                 <div class="row mb-3">
                     <h3>Tambah Tugas</h3>
@@ -90,10 +90,10 @@
                   </table>
                 <div class="row mb-3">
                     <h5>Detail Harga</h5>
-                    <p id="jumlah-barang"></p>
-                    <p id="total-barang"></p>
-                    <p id="pajak"></p>
-                    <p id="grand-total"></p>
+                    <p id="jumlah-barang" class="mb-1"></p>
+                    <p id="total-barang" class="mb-1"></p>
+                    <p id="pajak" class="mb-1"></p>
+                    <p id="grand-total" class="mb-1"></p>
                 </div>
                   <button class="btn btn-primary" id="checkout-btn">Checkout</button>
             </div>
